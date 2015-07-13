@@ -1,0 +1,722 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                       xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                       xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                       xmlns:dc="http://purl.org/dc/elements/1.1/"
+                       xmlns:dcterms="http://purl.org/dc/terms/">
+    <skos:ConceptScheme rdf:about="">
+        <rdfs:comment>This is a SKOS version of the Instrument Taxonomy developed by MusicBrainz</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://wiki.musicbrainz.org/AdvancedInstrumentTree?action=AttachFile&amp;do=get&amp;target=AdvancedInstrumentTree_2007-30-01.pdf"/>
+        <rdfs:seeAlso rdf:resource="http://wiki.musicbrainz.org/AdvancedInstrumentTree"/>
+        <dc:date>2007-04-04</dc:date>
+        <dcterms:issued>2007-03-04</dcterms:issued>
+        <dcterms:modified>2007-04-04</dcterms:modified>
+        <dc:creator>
+            <foaf:Person rdf:about="http://www.ivan-herman.net/foaf.rdf#me">
+                <foaf:name>Ivan Herman</foaf:name>
+            </foaf:Person>
+        </dc:creator>
+        <rdfs:comment>Version 0.1</rdfs:comment>
+        <skos:hasTopConcept rdf:resource="http://purl.org/ontology/mo/mit#Wind_instruments"/>
+        <skos:hasTopConcept rdf:resource="http://purl.org/ontology/mo/mit#String_instruments"/>
+        <skos:hasTopConcept rdf:resource="http://purl.org/ontology/mo/mit#Percussion_instruments"/>
+        <skos:hasTopConcept rdf:resource="http://purl.org/ontology/mo/mit#Electronic_instruments"/>
+        <skos:hasTopConcept rdf:resource="http://purl.org/ontology/mo/mit#Other_instruments"/>
+   </skos:ConceptScheme>
+
+    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Percussion_instruments">
+        <skos:prefLabel>Percussion instruments</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Drums">
+              <skos:prefLabel xml:lang="en">drums</skos:prefLabel>
+              <skos:prefLabel xml:lang="en">Drums</skos:prefLabel>
+              <skos:prefLabel xml:lang="pt">bateria</skos:prefLabel>
+              <skos:prefLabel xml:lang="pt">Bateria</skos:prefLabel>    
+                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Drumset">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Drumset</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Brushes">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drumset"/>
+                                <skos:prefLabel>Brushes</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Frame_drum">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Frame drum</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Tambourine">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Frame_drum"/>
+                                <skos:prefLabel>Tambourine</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Rek">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tambourine"/>
+                                        <skos:prefLabel>Rek</skos:prefLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                    </skos:Concept>
+                                </skos:narrower>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Daf">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tambourine"/>
+                                        <skos:prefLabel>Daf</skos:prefLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                    </skos:Concept>
+                                </skos:narrower>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bendir">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tambourine"/>
+                                        <skos:prefLabel>Bendir</skos:prefLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                    </skos:Concept>
+                                </skos:narrower>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bohdran">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Frame_drum"/>
+                                <skos:prefLabel>Bohdrán</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Ocean_drum">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Frame_drum"/>
+                                <skos:prefLabel>Ocean drum</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Congas">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Congas</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bongos">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Bongos</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Djembe">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Djembe</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Doyra">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Doyra</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Goblet_drum">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Goblet drum</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Tabla">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Goblet_drum"/>
+                                <skos:prefLabel>Tabla</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Zarb">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Goblet_drum"/>
+                                <skos:prefLabel>Zarb</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Darbuka">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Goblet_drum"/>
+                                <skos:prefLabel>Darbuka</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Trong_Bong">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Goblet_drum"/>
+                                <skos:prefLabel>Trống Bông</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Cajon">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Cajón</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Madal">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Madal</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Vessel_drum">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Vessel drum</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Udu">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Vessel_drum"/>
+                                <skos:prefLabel>Udu</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Ghatam">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Vessel_drum"/>
+                                <skos:prefLabel>Ghatam</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Taiko">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Taiko</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Tanbou_ka">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Tanbou ka</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Dai_co">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Đại cô</skos:prefLabel>
+                        <skos:altLabel>tiểu cô</skos:altLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Dholak">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Dholak</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Snare_drum">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Snare drum</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Surdo">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Surdo</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Timpani">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Timpani</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Talking_drum">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Talking drum</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Slite_drum">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Drums"/>
+                        <skos:prefLabel>Slite drum</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Mo">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Slite_drum"/>
+                                <skos:prefLabel>Mõ</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Tuned_percussion">
+                <skos:prefLabel>Tuned percussion</skos:prefLabel>
+                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bells">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Bells</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Handbells">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Bells"/>
+                                <skos:prefLabel>Handbells</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Tubular_Bells">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Bells"/>
+                                <skos:prefLabel>Tubular Bells</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Cowbell">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Bells"/>
+                                <skos:prefLabel>Cowbell</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Carillon">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Bells"/>
+                                <skos:prefLabel>Carillon</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Gankogui">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Bells"/>
+                                <skos:prefLabel>Gankogui</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Gongs">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Gongs</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Gong">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Gongs"/>
+                                <skos:prefLabel>Gong</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Chieng">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Gong"/>
+                                        <skos:prefLabel>Chiêng</skos:prefLabel>
+                                        <skos:altLabel>la</skos:altLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                    </skos:Concept>
+                                </skos:narrower>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Cymbals">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Gongs"/>
+                                <skos:prefLabel>Cymbals</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bat">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Cymbals"/>
+                                        <skos:prefLabel>Bát</skos:prefLabel>
+                                        <skos:altLabel>Chập choa</skos:altLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                    </skos:Concept>
+                                </skos:narrower>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Xylophone">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Xylophone</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Marimba">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Marimba</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Glockenspiel">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Glockenspiel</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Crotales">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Glockenspiel"/>
+                                        <skos:prefLabel>Crotales</skos:prefLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                    </skos:Concept>
+                                </skos:narrower>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Celesta">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Celesta</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Gamelan">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Gamelan</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bamboo_angklung">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Gamelan"/>
+                                        <skos:prefLabel>Bamboo angklung</skos:prefLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                        <skos:narrower>
+                                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Metal_angklung">
+                                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Bamboo_angklung"/>
+                                                <skos:prefLabel>Metal angklung</skos:prefLabel>
+                                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                            </skos:Concept>
+                                        </skos:narrower>
+                                    </skos:Concept>
+                                </skos:narrower>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Dan_Trung">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Dan Trung</skos:prefLabel>
+                                <skos:altLabel>Dan Klom-put</skos:altLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Amadinda">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Amadinda</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Balafon">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Balafon</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Metallophone">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Metallophone</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Vibraphone">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Vibraphone</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Ti_Bwa">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Xylophone"/>
+                                <skos:prefLabel>Ti Bwa</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Timbales">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Timbales</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Steelpan">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Steelpan</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Triangle">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Triangle</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Whistle">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Whistle</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Mbira">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Mbira</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Singing_bowl">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Singing bowl</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Chimes">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tuned_percussion"/>
+                        <skos:prefLabel>Chimes</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Other_percussion">
+                <skos:prefLabel>Other percussion</skos:prefLabel>
+                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Afuche">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Afuche</skos:prefLabel>
+                        <skos:altLabel>Cabasa</skos:altLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Rattle">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Rattle</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Maracas">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Rattle"/>
+                                <skos:prefLabel>Maracas</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Chacha">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Rattle"/>
+                                <skos:prefLabel>Chacha</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Sistrum">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Rattle"/>
+                                <skos:prefLabel>Sistrum</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Ankle_rattlers">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Rattle"/>
+                                <skos:prefLabel>Ankle rattlers</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Shekere">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Rattle"/>
+                                <skos:prefLabel>Shekere</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Rainstick">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Rattle"/>
+                                <skos:prefLabel>Rainstick</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Shakers">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Shakers</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Castanets">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Castanets</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Spoons">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Castanets"/>
+                                <skos:prefLabel>Spoons</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Song_loan">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Castanets"/>
+                                <skos:prefLabel>Song loan</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bones">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Castanets"/>
+                                <skos:prefLabel>Bones</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Claves">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Castanets"/>
+                                <skos:prefLabel>Claves</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Rythm_sticks">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Castanets"/>
+                                <skos:prefLabel>Rythm sticks</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Sanh_Tien">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Castanets"/>
+                                <skos:prefLabel>Sanh Tiên</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                <skos:narrower>
+                                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Phach">
+                                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Sanh_Tien"/>
+                                        <skos:prefLabel>Phách</skos:prefLabel>
+                                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                                    </skos:Concept>
+                                </skos:narrower>
+                            </skos:Concept>
+                        </skos:narrower>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Bin-sasara">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Castanets"/>
+                                <skos:prefLabel>Bin-sasara</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Gueiro">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Güiro</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Mendoza">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Mendoza</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Ratchet">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Ratchet</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Vibraslap">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Vibraslap</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Washboard">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Washboard</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Frattoir">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Washboard"/>
+                                <skos:prefLabel>Frattoir</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Whip">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Whip</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Wood_Block">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Wood Block</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Temple_Blocks">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Wood_Block"/>
+                                <skos:prefLabel>Temple Blocks</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Tibetan_Water_Drum">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Tibetan Water Drum</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                        <skos:narrower>
+                            <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Waterphone">
+                                <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Tibetan_Water_Drum"/>
+                                <skos:prefLabel>Waterphone</skos:prefLabel>
+                                <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                            </skos:Concept>
+                        </skos:narrower>
+                    </skos:Concept>
+                </skos:narrower>
+                <skos:narrower>
+                    <skos:Concept rdf:about="http://purl.org/ontology/mo/mit#Handclaps">
+                        <skos:broader rdf:resource="http://purl.org/ontology/mo/mit#Other_percussion"/>
+                        <skos:prefLabel>Handclaps</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/ontology/mo/instruments#Musical_instruments"/>
+                    </skos:Concept>
+                </skos:narrower>
+            </skos:Concept>
+        </skos:narrower>
+    </skos:Concept>
+</rdf:RDF>

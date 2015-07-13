@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://purl.org/goodrelations/v1" uri="www.heppnetz.de/ontologies/goodrelations/v1.xml"/>
+    <system systemId="http://purl.org/vso/ns" uri="purl.org/vso/ns"/>
+    <system systemId="http://www.w3.org/2002/07/owl" uri="www.w3.org/2002/07/owl"/>
+    <system systemId="http://www.w3.org/2004/02/skos/core" uri="www.w3.org/2004/02/skos/core"/>
+    <system systemId="http://www.w3.org/2000/01/rdf-schema" uri="www.w3.org/2000/01/rdf-schema"/>
+    <system systemId="http://www.w3.org/1999/02/22-rdf-syntax-ns" uri="www.w3.org/1999/02/22-rdf-syntax-ns"/>
+    <system systemId="http://purl.org/dc/terms/" uri="dublincore.org/2012/06/14/dcterms"/>
+    <system systemId="http://en.wikipedia.org/wiki/" uri="en.wikipedia.org/wiki/main_page.xml"/>
+    <system systemId="http://purl.org/dc/elements/1.1/" uri="dublincore.org/2012/06/14/dcelements"/>
+    <system systemId="http://dbpedia.org/resource/" uri="dbpedia.org/resource/index"/>
+</catalog>
